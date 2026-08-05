@@ -1,0 +1,48 @@
+{
+  "@context": "../../context/source.context.jsonld",
+  "@type": "dcat:Dataset",
+  "@id": "https://biobricks.ai/bricks/qm9",
+  "dcterms:title": "qm9 (unconfigured brick-template stub)",
+  "dcterms:description": "This repository named 'qm9' is an essentially unmodified copy of the biobricks-ai brick-template. Its download stage (stages/01_download.sh) has an EMPTY ftp base address (ftpbase=\"\"), its dvc.lock records no stages, its README is the generic template 'How to build bricks' text, and there is no .bb metadata or built brick data. No upstream source URL is configured, so it cannot be confirmed from the repository which dataset (if any) it would contain. The name implies the canonical QM9 quantum-chemistry dataset (Ramakrishnan et al. 2014), which is published CC0 on figshare, but that identity is NOT established by anything in this repo.",
+  "dcterms:license": {
+    "@id": "UNSTATED",
+    "dcterms:title": "No source configured: unmodified brick-template stub, empty download and dvc.lock"
+  },
+  "biobricks:licenseName": "Unstated (unconfigured template stub; no source configured)",
+  "biobricks:licenseClass": "unknown",
+  "biobricks:merckCommercialUse": "unknown",
+  "biobricks:licenseEvidence": [
+    {
+      "source": "stages/01_download.sh",
+      "quote": "# Define the FTP base address\nftpbase=\"\"",
+      "confidence": "high"
+    },
+    {
+      "source": "dvc.lock",
+      "quote": "schema: '2.0'\nstages: {}",
+      "confidence": "high"
+    },
+    {
+      "source": "README.md",
+      "quote": "# How to build bricks ... Create a brick named `{newbrick}` from this template",
+      "confidence": "high"
+    }
+  ],
+  "biobricks:reviewed": false,
+  "biobricks:reviewNotes": "Determined by the BioBricks licensing-provenance annotation agent (Claude Opus 4.8). This 'qm9' repo is an unconfigured brick-template stub: the download script has an empty ftpbase, dvc.lock has no stages, the README is the generic template, and there is no .bb metadata or built data. Nothing in the repo identifies an upstream dataset or license, so honestly license=UNSTATED, class=unknown, merckCommercialUse=unknown. NOTE: the sibling brick 'qm9-molecular-properties-dataset' IS a working build of the canonical QM9 dataset (figshare article 1057646, CC0) -- if this stub is intended to be the same QM9 data it would be CC0/open, but that cannot be asserted from this repo as it stands. REVIEWER: either point this repo at a real source and re-annotate, or retire it as an empty template.",
+  "dcterms:publisher": "BioBricks.ai (template)",
+  "dcterms:identifier": "https://github.com/biobricks-ai/qm9",
+  "prov:wasDerivedFrom": [
+    {
+      "@type": "dcat:Dataset",
+      "@id": "https://github.com/biobricks-ai/qm9",
+      "dcterms:title": "qm9 brick-template repository (no upstream source configured)",
+      "dcterms:license": {
+        "@id": "UNSTATED",
+        "dcterms:title": "No source configured"
+      },
+      "dcat:landingPage": "https://github.com/biobricks-ai/qm9",
+      "dcterms:publisher": "BioBricks.ai"
+    }
+  ]
+}
